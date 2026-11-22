@@ -96,8 +96,9 @@ export default function Login({ onDemoLogin }) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email: identifier.trim(),
-      }),
+      email: email,
+      password: password
+})
     });
 
     const data = await response.json();
