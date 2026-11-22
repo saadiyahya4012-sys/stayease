@@ -1,0 +1,141 @@
+@import "tailwindcss";
+@import "./styles/variables.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--se-font-sans);
+  color: var(--se-ink);
+  background-color: var(--se-ivory);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--se-font-display);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--se-terracotta);
+  outline-offset: 2px;
+}
+
+.se-container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.se-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 22px;
+  border-radius: var(--se-radius-sm);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition:
+    background-color 180ms var(--se-ease),
+    color 180ms var(--se-ease),
+    border-color 180ms var(--se-ease),
+    transform 180ms var(--se-ease),
+    box-shadow 180ms var(--se-ease);
+}
+
+.se-btn:active {
+  transform: translateY(1px);
+}
+
+.se-btn-primary {
+  background-color: var(--se-teal);
+  color: var(--se-white);
+}
+
+.se-btn-primary:hover {
+  background-color: var(--se-teal-dark);
+}
+
+.se-btn-accent {
+  background-color: var(--se-terracotta);
+  color: var(--se-white);
+}
+
+.se-btn-accent:hover {
+  background-color: var(--se-terracotta-dark);
+}
+
+.se-btn-gold {
+  background-color: var(--se-gold);
+  color: var(--se-teal-dark);
+}
+
+.se-btn-gold:hover {
+  background-color: var(--se-gold-soft);
+}
+
+.se-btn-outline {
+  background-color: transparent;
+  color: var(--se-teal);
+  border-color: var(--se-border-strong);
+}
+
+.se-btn-outline:hover {
+  border-color: var(--se-teal);
+  background-color: rgba(18, 60, 58, 0.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

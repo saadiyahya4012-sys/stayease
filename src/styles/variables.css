@@ -1,0 +1,28 @@
+:root {
+  --se-teal: #123C3A;
+  --se-teal-dark: #0D2B29;
+  --se-teal-light: #1B524F;
+  --se-gold: #DDAA78;
+  --se-gold-soft: #E9C6A3;
+  --se-ivory: #F4EFE6;
+  --se-ivory-deep: #EAE2D3;
+  --se-terracotta: #C87559;
+  --se-terracotta-dark: #B05F45;
+  --se-white: #FFFFFF;
+
+  --se-ink: #132120;
+  --se-ink-muted: #556361;
+  --se-border: rgba(18, 60, 58, 0.13);
+  --se-border-strong: rgba(18, 60, 58, 0.24);
+
+  --se-font-display: 'Cormorant Garamond', Georgia, serif;
+  --se-font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --se-radius-sm: 8px;
+  --se-radius-md: 12px;
+  --se-radius-lg: 18px;
+
+  --se-shadow-sm: 0 4px 16px rgba(18, 60, 58, 0.06);
+  --se-shadow-md: 0 14px 36px rgba(18, 60, 58, 0.1);
+  --se-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

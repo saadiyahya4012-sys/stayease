@@ -1,0 +1,133 @@
+.se-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background-color: rgba(244, 239, 230, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--se-border);
+}
+
+.se-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  height: 72px;
+}
+
+.se-brand {
+  font-family: var(--se-font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--se-teal);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.se-nav {
+  display: none;
+  align-items: center;
+  gap: 28px;
+}
+
+.se-nav-link {
+  position: relative;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--se-ink-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 6px 0;
+  transition: color 180ms var(--se-ease);
+}
+
+.se-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background-color: var(--se-terracotta);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms var(--se-ease);
+}
+
+.se-nav-link:hover,
+.se-nav-link.is-active {
+  color: var(--se-teal);
+}
+
+.se-nav-link:hover::after,
+.se-nav-link.is-active::after {
+  transform: scaleX(1);
+}
+
+.se-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.se-user-session {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.se-user-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--se-teal);
+  white-space: nowrap;
+}
+
+.se-mobile-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--se-radius-sm);
+  border: 1px solid var(--se-border);
+  background-color: var(--se-white);
+  color: var(--se-teal);
+  cursor: pointer;
+}
+
+.se-mobile-drawer {
+  border-top: 1px solid var(--se-border);
+  background-color: var(--se-ivory);
+  padding: 16px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.se-mobile-link {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--se-teal);
+  border-bottom: 1px solid var(--se-border);
+}
+
+.se-mobile-action {
+  margin-top: 12px;
+}
+
+@media (min-width: 900px) {
+  .se-nav {
+    display: flex;
+  }
+
+  .se-mobile-toggle,
+  .se-mobile-drawer {
+    display: none;
+  }
+}

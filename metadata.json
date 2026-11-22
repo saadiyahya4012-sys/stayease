@@ -1,0 +1,6 @@
+{
+  "name": "StayEase",
+  "description": "Discover places worth staying — curated boutique hotels, coastal palazzos, and tranquil retreats worldwide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

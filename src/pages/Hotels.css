@@ -1,0 +1,130 @@
+.se-hotels-page {
+  padding: 48px 0 88px;
+}
+
+.se-hotels-header {
+  margin-bottom: 32px;
+}
+
+.se-hotels-title {
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  font-weight: 600;
+  color: var(--se-teal);
+  margin: 8px 0 10px;
+}
+
+.se-hotels-subtitle {
+  color: var(--se-ink-muted);
+  max-width: 58ch;
+  margin: 0;
+}
+
+.se-filters-bar {
+  background-color: var(--se-white);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 20px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.se-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.se-filter-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--se-ink-muted);
+}
+
+.se-filter-control {
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-sm);
+  background-color: var(--se-ivory);
+  color: var(--se-ink);
+  font-size: 0.9375rem;
+}
+
+.se-filter-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.se-filter-search-icon {
+  position: absolute;
+  left: 12px;
+  color: var(--se-ink-muted);
+  pointer-events: none;
+}
+
+.se-filter-search-input {
+  width: 100%;
+  padding-left: 38px;
+}
+
+.se-results-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+  font-size: 0.9375rem;
+  color: var(--se-ink-muted);
+}
+
+.se-hotels-catalog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.se-empty-state {
+  background-color: var(--se-white);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 56px 24px;
+  text-align: center;
+}
+
+.se-empty-title {
+  font-size: 1.75rem;
+  color: var(--se-teal);
+  margin: 0 0 8px;
+}
+
+.se-empty-copy {
+  color: var(--se-ink-muted);
+  margin: 0 0 24px;
+}
+
+@media (min-width: 640px) {
+  .se-filters-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .se-hotels-catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .se-filters-bar {
+    grid-template-columns: 1.6fr 1fr 1fr 1fr auto;
+    align-items: end;
+  }
+
+  .se-hotels-catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

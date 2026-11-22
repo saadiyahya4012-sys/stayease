@@ -1,0 +1,332 @@
+.sll-page {
+  min-height: 100vh;
+  background-color: #F0F2F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1C1E21;
+}
+
+.sll-top-bar {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 24px 0;
+}
+
+.sll-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #123C3A;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(18, 60, 58, 0.14);
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.sll-back-link:hover {
+  background-color: #FFFFFF;
+  border-color: #123C3A;
+}
+
+.sll-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px 56px;
+}
+
+.sll-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  padding: 32px 28px 30px;
+  text-align: center;
+}
+
+.sll-logo {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: #0866FF;
+  margin: 0 0 6px;
+  line-height: 1.1;
+}
+
+.sll-subtitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #606770;
+  margin: 0 0 24px;
+}
+
+.sll-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.sll-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sll-input {
+  width: 100%;
+  height: 50px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: #1C1E21;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDFE2;
+  border-radius: 8px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.sll-input::placeholder {
+  color: #8A8D91;
+}
+
+.sll-input:focus {
+  outline: none;
+  border-color: #0866FF;
+  box-shadow: 0 0 0 2px rgba(8, 102, 255, 0.16);
+}
+
+.sll-input.has-error {
+  border-color: #C93B2B;
+}
+
+.sll-password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sll-password-input {
+  padding-right: 48px;
+}
+
+.sll-eye-btn {
+  position: absolute;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: #606770;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sll-eye-btn:hover {
+  background-color: #F0F2F5;
+  color: #1C1E21;
+}
+
+.sll-error-text {
+  font-size: 0.8125rem;
+  color: #C93B2B;
+  margin: 0;
+  font-weight: 500;
+}
+
+.sll-submit-btn {
+  width: 100%;
+  height: 48px;
+  margin-top: 2px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0866FF;
+  color: #FFFFFF;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 160ms ease;
+}
+
+.sll-submit-btn:hover {
+  background-color: #0756D6;
+}
+
+.sll-forgot-wrap {
+  text-align: center;
+  margin-top: 4px;
+}
+
+.sll-forgot-link {
+  background: none;
+  border: none;
+  padding: 6px 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #0866FF;
+  cursor: pointer;
+}
+
+.sll-forgot-link:hover {
+  text-decoration: underline;
+}
+
+.sll-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 18px 0 20px;
+  color: #606770;
+  font-size: 0.875rem;
+}
+
+.sll-divider::before,
+.sll-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #DADDE1;
+}
+
+.sll-create-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 24px;
+  border-radius: 8px;
+  background-color: #2A851D;
+  color: #FFFFFF;
+  font-size: 0.975rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+.sll-create-btn:hover {
+  background-color: #237218;
+}
+
+.sll-feedback {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 0.84375rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.sll-feedback.is-info {
+  background-color: #EDF3FF;
+  border: 1px solid #C5D9FF;
+  color: #16489A;
+}
+
+.sll-feedback.is-success {
+  background-color: #ECFDF3;
+  border: 1px solid #ABEFC6;
+  color: #0E6036;
+}
+
+.sll-feedback.is-error {
+  background-color: #FEF3F2;
+  border: 1px solid #FECDCA;
+  color: #B42318;
+}
+
+.sll-continue-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 700;
+  color: #0E6036;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sll-footer {
+  background-color: #FFFFFF;
+  border-top: 1px solid #E4E6EB;
+  padding: 28px 24px 32px;
+}
+
+.sll-footer-inner {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.sll-lang-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-bottom: 12px;
+}
+
+.sll-footer-divider {
+  height: 1px;
+  background-color: #DDDFE2;
+  margin: 12px 0;
+}
+
+.sll-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-bottom: 16px;
+}
+
+.sll-footer-btn {
+  background: none;
+  border: none;
+  padding: 2px 0;
+  font-size: 0.8125rem;
+  color: #73777C;
+  cursor: pointer;
+}
+
+.sll-footer-btn:hover,
+.sll-footer-btn.is-active {
+  color: #1C1E21;
+  text-decoration: underline;
+}
+
+.sll-footer-note {
+  margin: 10px 0 14px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background-color: #F0F2F5;
+  font-size: 0.8125rem;
+  color: #4B4F56;
+}
+
+.sll-footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.78125rem;
+  color: #73777C;
+}
+
+@media (min-width: 640px) {
+  .sll-card {
+    padding: 36px 32px 32px;
+  }
+
+  .sll-footer-meta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

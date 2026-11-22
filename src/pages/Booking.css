@@ -1,0 +1,144 @@
+.se-booking-page {
+  padding: 40px 0 88px;
+}
+
+.se-booking-header {
+  margin-bottom: 32px;
+}
+
+.se-booking-title {
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  color: var(--se-teal);
+  margin: 8px 0 8px;
+}
+
+.se-booking-subtitle {
+  color: var(--se-ink-muted);
+  margin: 0;
+}
+
+.se-booking-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.se-booking-form-card {
+  background-color: var(--se-white);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 28px 24px;
+}
+
+.se-booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.se-booking-row-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.se-booking-summary {
+  background-color: var(--se-white);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-md);
+  padding: 24px;
+  box-shadow: var(--se-shadow-sm);
+}
+
+.se-summary-hotel {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--se-border);
+}
+
+.se-summary-thumb {
+  width: 88px;
+  height: 68px;
+  border-radius: var(--se-radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.se-summary-hotel-name {
+  font-family: var(--se-font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--se-teal);
+  margin: 0 0 4px;
+}
+
+.se-summary-hotel-loc {
+  font-size: 0.8125rem;
+  color: var(--se-ink-muted);
+}
+
+.se-summary-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--se-border);
+  font-size: 0.9375rem;
+}
+
+.se-summary-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--se-ink-muted);
+}
+
+.se-summary-line strong {
+  color: var(--se-ink);
+}
+
+.se-summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--se-teal);
+  margin-bottom: 16px;
+}
+
+.se-summary-demo-box {
+  background-color: var(--se-ivory);
+  border: 1px solid var(--se-border);
+  border-radius: var(--se-radius-sm);
+  padding: 12px 14px;
+  font-size: 0.8125rem;
+  color: var(--se-ink-muted);
+  line-height: 1.5;
+}
+
+@media (min-width: 640px) {
+  .se-booking-row-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .se-booking-form-card {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 960px) {
+  .se-booking-grid {
+    grid-template-columns: 1.35fr 0.85fr;
+    gap: 40px;
+  }
+
+  .se-booking-summary {
+    position: sticky;
+    top: 96px;
+  }
+}
