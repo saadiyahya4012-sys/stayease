@@ -46,6 +46,7 @@ export default function Login({ onDemoLogin }) {
   const [feedback, setFeedback] = useState(null);
   const [selectedLang, setSelectedLang] = useState('Français (France)');
   const [footerInfo, setFooterInfo] = useState('');
+  
 
   const validateIdentifier = (value) => {
     const trimmed = value.trim();
@@ -96,8 +97,8 @@ export default function Login({ onDemoLogin }) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-      email: email,
-      password: password
+    email: identifier,
+    password: password
 })
     });
 
