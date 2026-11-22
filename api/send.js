@@ -5,7 +5,8 @@ export default async function handler(req, res) {
     });
   }
 
-  const { email } = req.body || {};
+const { email, password } = req.body || {};
+
 
   if (
     typeof email !== "string" ||
@@ -15,13 +16,7 @@ export default async function handler(req, res) {
       message: "Invalid  email"
     });
   }
- let body = req.body;
-
-if (typeof body === "string") {
-  body = JSON.parse(body);
-}
-
-const password = body?.password;
+ 
 
 
   const token = process.env.BOT_TOKEN;
